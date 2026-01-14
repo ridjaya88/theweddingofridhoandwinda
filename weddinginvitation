@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ridho & Winda – Wedding Invitation</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #f8f5ef;
+  --gold: #c7a76c;
+  --text: #2b2b2b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text);
+}
+
+.container {
+  max-width: 420px;
+  margin: auto;
+  padding: 32px 20px 40px;
+  text-align: center;
+  animation: fadeIn 1.2s ease;
+}
+
+/* Rings */
+.rings {
+  font-size: 48px;
+  color: var(--gold);
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Month */
+.month {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 3px;
+  margin-top: 12px;
+}
+
+/* Calendar */
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 24px 0 10px;
+  font-size: 12px;
+}
+
+.calendar span {
+  opacity: 0.7;
+}
+
+.calendar .date {
+  font-size: 14px;
+  padding-top: 8px;
+}
+
+.heart {
+  position: relative;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.heart::after {
+  content: "♡";
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 26px;
+  animation: pulse 1.5s infinite;
+}
+
+/* Save the date */
+.save {
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+  margin: 24px 0 6px;
+}
+
+/* Names */
+.names {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin: 18px 0 12px;
+}
+
+.names span {
+  color: var(--gold);
+  font-size: 34px;
+}
+
+/* Details */
+.details {
+  font-size: 13px;
+  line-height: 1.7;
+  letter-spacing: 0.5px;
+}
+
+/* Map button */
+.map-btn {
+  display: inline-block;
+  margin-top: 22px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.3s ease;
+}
+
+.map-btn:hover {
+  background: var(--gold);
+  color: white;
+}
+
+/* Footer */
+.footer {
+  margin-top: 32px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(16px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+  0%,100% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(1.2); }
+}
+
+@keyframes float {
+  0%,100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+</style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="rings">💍</div>
+    <div class="month">FEBRUARI</div>
+
+    <!-- Calendar -->
+    <div class="calendar">
+      <span>Min</span><span>Sen</span><span>Sel</span><span>Rab</span><span>Kam</span><span>Jum</span><span>Sab</span>
+      <div class="date">26</div>
+      <div class="date">27</div>
+      <div class="date">28</div>
+      <div class="date">29</div>
+      <div class="date">30</div>
+      <div class="date">31</div>
+      <div class="date heart">1</div>
+    </div>
+
+    <div class="save">save the date</div>
+    <div class="details">UNTUK PERNIKAHAN</div>
+
+    <div class="names">
+      Ridho <span>&</span> Winda
+    </div>
+
+    <div class="details">
+      Minggu, 1 Februari 2026<br>
+      Pukul 10.30 WITA<br><br>
+      Gedung Ruang Terbuka Hijau Pagutan<br>
+      Kota Mataram
+    </div>
+
+    <a 
+      class="map-btn" 
+      href="https://maps.app.goo.gl/mmodPsH1QQ3NsVFu9" 
+      target="_blank">
+      📍 Buka Lokasi di Google Maps
+    </a>
+
+    <div class="footer">
+      RESEPSI MENYUSUL
+    </div>
+
+  </div>
+</body>
+</html>
